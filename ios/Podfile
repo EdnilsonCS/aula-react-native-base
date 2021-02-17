@@ -5,6 +5,7 @@ platform :ios, '10.0'
 
 target 'TesteLibrary' do
   config = use_native_modules!
+  pod 'OpenSSL-Universal', '~>1.0.2.20'
 
   use_react_native!(:path => config["reactNativePath"])
 
