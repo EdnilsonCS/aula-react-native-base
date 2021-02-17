@@ -1,12 +1,15 @@
 import React from 'react';
-import {NavigationContainer} from '@react-navigation/native';
+import { NavigationContainer } from '@react-navigation/native';
+import AppProvider from '@hooks/index';
 import Routes from './routes';
 
-const App = () => {
+const App: React.FC = () => {
   return (
-    <NavigationContainer>
-      <Routes />
-    </NavigationContainer>
+    <AppProvider>
+      <NavigationContainer>
+        <Routes />
+      </NavigationContainer>
+    </AppProvider>
   );
 };
 
