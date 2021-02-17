@@ -9,8 +9,9 @@ module.exports = {
   collectCoverageFrom: [
     'src/screens/**/index.tsx',
     'src/services/**/*.ts',
-    'src/components/**/index.ts',
-    'src/hooks/*.ts',
-    '!src/hooks/index.ts',
+    'src/components/*.tsx',
+    '!src/components/**/index.ts',
+    'src/hooks/*.tsx',
+    '!src/hooks/index.tsx',
   ],
 };
