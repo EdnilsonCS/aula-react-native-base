@@ -12,34 +12,34 @@
     // "sourceMap": true,                     /* Generates corresponding '.map' file. */
     // "outFile": "./",                       /* Concatenate and emit output to single file. */
     // "outDir": "./",
-    "baseUrl": ".",
+    "baseUrl": "src",
     "paths": {
       "@assets/*": [
-        "./src/assets/*"
+        "assets/*"
       ],
       "@components/*": [
-        "./src/components/*"
+        "components/*"
       ],
       "@helpers/*": [
-        "./src/helpers/*"
+        "helpers/*"
       ],
       "@hooks/*": [
-        "./src/hooks/*"
+        "hooks/*"
       ],
       "@routes/*": [
-        "./src/routes/*"
+        "routes/*"
       ],
       "@screens/*": [
-        "./src/screens/*"
+        "screens/*"
       ],
       "@services/*": [
-        "./src/services/*"
+        "services/*"
       ],
       "@styles/*": [
-        "./src/styles/*"
+        "styles/*"
       ],
       "@utils/*": [
-        "./src/utils/*"
+        "utils/*"
       ],
     },                        /* Redirect output structure to the directory. */
     // "rootDir": "./",                       /* Specify the root directory of input files. Use to control the output directory structure with --outDir. */
@@ -48,7 +48,7 @@
     // "incremental": true,                   /* Enable incremental compilation */
     // "importHelpers": true,                 /* Import emit helpers from 'tslib'. */
     // "downlevelIteration": true,            /* Provide full support for iterables in 'for-of', spread, and destructuring when targeting 'ES5' or 'ES3'. */
-    "isolatedModules": true,                  /* Transpile each file as a separate module (similar to 'ts.transpileModule'). */
+    "isolatedModules": false,                  /* Transpile each file as a separate module (similar to 'ts.transpileModule'). */
 
     /* Strict Type-Checking Options */
     "strict": true,                           /* Enable all strict type-checking options. */
