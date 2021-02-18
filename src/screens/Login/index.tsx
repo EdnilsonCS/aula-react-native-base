@@ -1,10 +1,10 @@
 import React from 'react';
 import { TextInput, Button } from '@components/index';
 import * as Yup from 'yup';
-import { View } from 'react-native';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { useAuth } from '@hooks/auth';
+import { Container, Icon, Title } from './styles';
 
 interface LoginData {
   email: string;
@@ -30,7 +30,9 @@ const Login: React.FC = () => {
     signIn(data);
   };
   return (
-    <View>
+    <Container>
+      <Icon name="clipboard" size={200} />
+      <Title>TODO</Title>
       <TextInput
         name="email"
         errors={errors}
@@ -48,7 +50,7 @@ const Login: React.FC = () => {
       />
 
       <Button onPress={handleSubmit(onSubmit)}>Login</Button>
-    </View>
+    </Container>
   );
 };
 
