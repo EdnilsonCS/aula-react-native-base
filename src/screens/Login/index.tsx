@@ -4,6 +4,7 @@ import * as Yup from 'yup';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { useAuth } from '@hooks/auth';
+import { useNavigation } from '@react-navigation/native';
 import { Container, Icon, Title } from './styles';
 
 interface LoginData {
@@ -16,7 +17,7 @@ const Login: React.FC = () => {
     email: Yup.string().required('E-mail obrigatório'),
     password: Yup.string().required('Senha obrigatória'),
   });
-
+  const navigation = useNavigation();
   const { signIn } = useAuth();
   const { control, handleSubmit, errors } = useForm({
     resolver: yupResolver(schema),
@@ -28,6 +29,7 @@ const Login: React.FC = () => {
   });
   const onSubmit = (data: LoginData): void => {
     signIn(data);
+    navigation.navigate('ListTodo');
   };
   return (
     <Container>
