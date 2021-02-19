@@ -1,0 +1,190 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List Todo Should be able to render correct 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "paddingTop": 20,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "flex-end",
+          "backgroundColor": "#FFA800",
+          "height": 90,
+          "justifyContent": "center",
+          "paddingRight": 20,
+        },
+      ]
+    }
+  >
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+      testID="new-create-item"
+    >
+      <Text
+        allowFontScaling={false}
+        style={
+          Array [
+            Object {
+              "color": undefined,
+              "fontSize": 40,
+            },
+            Array [
+              Object {},
+            ],
+            Object {
+              "fontFamily": "Feather",
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+            },
+            Object {},
+          ]
+        }
+      >
+        
+      </Text>
+    </View>
+  </View>
+  <RCTScrollView
+    data={
+      Array [
+        Object {
+          "description": "description-fake-2",
+          "id": "teste-id-1",
+          "title": "title-fake-1",
+        },
+        Object {
+          "description": "description-fake-2",
+          "id": "teste-id-2",
+          "title": "title-fake-1",
+        },
+      ]
+    }
+    disableVirtualization={false}
+    getItem={[Function]}
+    getItemCount={[Function]}
+    horizontal={false}
+    initialNumToRender={10}
+    keyExtractor={[Function]}
+    maxToRenderPerBatch={10}
+    onContentSizeChange={[Function]}
+    onEndReachedThreshold={2}
+    onLayout={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    removeClippedSubviews={false}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    stickyHeaderIndices={Array []}
+    style={
+      Array [
+        Object {
+          "paddingBottom": 16,
+          "paddingLeft": 24,
+          "paddingRight": 24,
+          "paddingTop": 23,
+        },
+      ]
+    }
+    updateCellsBatchingPeriod={50}
+    viewabilityConfigCallbackPairs={Array []}
+    windowSize={21}
+  >
+    <View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            Object {
+              "borderColor": "black",
+              "borderWidth": 1,
+              "padding": 20,
+            }
+          }
+          testID="teste-id-1"
+        >
+          <Text
+            style={
+              Array [
+                Object {},
+              ]
+            }
+          >
+            Titulo: 
+            title-fake-1
+          </Text>
+          <Text
+            style={
+              Array [
+                Object {},
+              ]
+            }
+          >
+            Descrição: 
+            description-fake-2
+          </Text>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            Object {
+              "borderColor": "black",
+              "borderWidth": 1,
+              "padding": 20,
+            }
+          }
+          testID="teste-id-2"
+        >
+          <Text
+            style={
+              Array [
+                Object {},
+              ]
+            }
+          >
+            Titulo: 
+            title-fake-1
+          </Text>
+          <Text
+            style={
+              Array [
+                Object {},
+              ]
+            }
+          >
+            Descrição: 
+            description-fake-2
+          </Text>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;
