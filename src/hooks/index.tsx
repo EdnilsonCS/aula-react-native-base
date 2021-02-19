@@ -1,9 +1,12 @@
 import React from 'react';
 
 import { AuthProvider } from './auth';
+import { TodoProvider } from './todo';
 
 const AppProvider: React.FC = ({ children }) => (
-  <AuthProvider>{children}</AuthProvider>
+  <TodoProvider>
+    <AuthProvider>{children}</AuthProvider>
+  </TodoProvider>
 );
 
 export default AppProvider;
