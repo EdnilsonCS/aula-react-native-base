@@ -1,11 +1,17 @@
-/**
- * @format
- */
-
-import 'react-native';
 import React from 'react';
 import { render, fireEvent, act } from '@testing-library/react-native';
 import Login from '.';
+
+const mockedHistoryPush = jest.fn();
+
+jest.mock('@react-navigation/native', () => {
+  return {
+    useNavigation: () => ({
+      goBack: jest.fn(),
+      navigate: mockedHistoryPush,
+    }),
+  };
+});
 
 const mockedSignIn = jest.fn();
 jest.mock('../../hooks/auth.tsx', () => {
