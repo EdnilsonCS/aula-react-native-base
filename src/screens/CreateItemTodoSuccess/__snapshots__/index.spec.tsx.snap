@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CreateItemTodoSuccess Should be able to render correct 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+      },
+    ]
+  }
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "fontSize": 14,
+        },
+      ]
+    }
+  >
+    Parabéns
+  </Text>
+  <Text
+    style={
+      Array [
+        Object {
+          "fontSize": 14,
+        },
+      ]
+    }
+  >
+    Seu item foi criado com sucesso!
+  </Text>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#1F1C1C",
+        "borderRadius": 5,
+        "justifyContent": "center",
+        "minWidth": 96,
+        "opacity": 1,
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#fff",
+            "fontSize": 14,
+            "letterSpacing": 1.25,
+            "lineHeight": 16,
+          },
+        ]
+      }
+    >
+      Ok!
+    </Text>
+  </View>
+</View>
+`;
