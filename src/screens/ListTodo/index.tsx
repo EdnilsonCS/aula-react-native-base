@@ -1,7 +1,7 @@
 import { useTodo } from '@hooks/todo';
 import { useNavigation } from '@react-navigation/native';
 import React, { useCallback } from 'react';
-import { View, TouchableOpacity } from 'react-native';
+import { View } from 'react-native';
 import {
   TodoList,
   Container,
@@ -9,6 +9,8 @@ import {
   TextDescription,
   Header,
   Icon,
+  TitleItem,
+  PlusButton,
 } from './styles';
 
 export interface ItemTodo {
@@ -27,7 +29,7 @@ const ListTodo: React.FC = () => {
         testID={item.id}
         style={{ borderColor: 'black', borderWidth: 1, padding: 20 }}
       >
-        <Title>Titulo: {item.title}</Title>
+        <TitleItem>Titulo: {item.title}</TitleItem>
         <TextDescription>Descrição: {item.description}</TextDescription>
       </View>
     );
@@ -38,12 +40,13 @@ const ListTodo: React.FC = () => {
   return (
     <Container>
       <Header>
-        <TouchableOpacity
+        <Title>Lista de itens</Title>
+        <PlusButton
           onPress={handleToNavigationToNewItem}
           testID="new-create-item"
         >
           <Icon size={40} name="plus-circle" />
-        </TouchableOpacity>
+        </PlusButton>
       </Header>
       <TodoList renderItem={renderItem} data={todo} />
     </Container>
