@@ -1318,6 +1318,11 @@
   dependencies:
     "@babel/types" "^7.3.0"
 
+"@types/detox@^17.14.0":
+  version "17.14.0"
+  resolved "https://registry.yarnpkg.com/@types/detox/-/detox-17.14.0.tgz#42922b64a918c1d5be74a4f0f397138f4ffabb8f"
+  integrity sha512-/yrUvrPjmY5CHcBu6dq+f9vDk/6joR9i335LGenP4U+TPWPbZ1QuK4ERJN2gzb6rdMeTA1+fhm58ZUQ+B6EyXQ==
+
 "@types/eslint-visitor-keys@^1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@types/eslint-visitor-keys/-/eslint-visitor-keys-1.0.0.tgz#1ee30d79544ca84d68d4b3cdb0af4f205663dd2d"
@@ -3400,6 +3405,13 @@ eslint-module-utils@^2.6.0:
   dependencies:
     debug "^2.6.9"
     pkg-dir "^2.0.0"
+
+eslint-plugin-detox@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-detox/-/eslint-plugin-detox-1.0.0.tgz#2d9c0130e8ebc4ced56efb6eeaf0d0f5c163398d"
+  integrity sha1-LZwBMOjrxM7Vbvtu6vDQ9cFjOY0=
+  dependencies:
+    requireindex "~1.1.0"
 
 eslint-plugin-eslint-comments@^3.1.2:
   version "3.2.0"
@@ -7608,6 +7620,11 @@ require-main-filename@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/require-main-filename/-/require-main-filename-2.0.0.tgz#d0b329ecc7cc0f61649f62215be69af54aa8989b"
   integrity sha512-NKN5kMDylKuldxYLSUfrbo5Tuzh4hd+2E8NPPX02mZtn1VuREQToYe/ZdlJy+J3uCpfaiGF05e7B8W0iXbQHmg==
+
+requireindex@~1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/requireindex/-/requireindex-1.1.0.tgz#e5404b81557ef75db6e49c5a72004893fe03e162"
+  integrity sha1-5UBLgVV+91225JxacgBIk/4D4WI=
 
 reselect@^4.0.0:
   version "4.0.0"
