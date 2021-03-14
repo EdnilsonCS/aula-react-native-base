@@ -41,6 +41,7 @@ const Login: React.FC = () => {
         control={control}
         placeholder="Email"
         icon="mail"
+        testID="email"
       />
 
       <TextInput
@@ -48,10 +49,11 @@ const Login: React.FC = () => {
         errors={errors}
         control={control}
         placeholder="Senha"
-        icon="mail"
+        icon="password"
+        testID="password"
       />
 
-      <Button onPress={handleSubmit(onSubmit)}>Login</Button>
+      <Button testID="login_button" onPress={handleSubmit(onSubmit)}>Login</Button>
     </Container>
   );
 };

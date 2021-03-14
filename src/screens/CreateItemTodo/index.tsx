@@ -42,6 +42,7 @@ const Login: React.FC = () => {
         control={control}
         placeholder="Titulo"
         icon="edit-2"
+        testID="title-input"
       />
 
       <TextInput
@@ -50,6 +51,7 @@ const Login: React.FC = () => {
         control={control}
         placeholder="Descrição"
         icon="edit"
+        testID="description-input"
       />
 
       <Button onPress={handleSubmit(onSubmit)}>Criar novo item</Button>
