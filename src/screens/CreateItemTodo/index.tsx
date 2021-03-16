@@ -54,7 +54,7 @@ const Login: React.FC = () => {
         testID="description-input"
       />
 
-      <Button onPress={handleSubmit(onSubmit)}>Criar novo item</Button>
+      <Button testID="handle-submit-new-item" onPress={handleSubmit(onSubmit)}>Criar novo item</Button>
     </Container>
   );
 };
